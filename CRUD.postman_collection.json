@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CRUD",
+		"_postman_id": "4fb5c9f2-620c-f3f2-5fe8-0eaaad65effb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUsers",
+			"request": {
+				"url": "localhost:5000/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idCard\": 305070987,\n\t\"name\": \"Erick Andrés\",\n\t\"lastname\": \"Obregón Fonseca\",\n\t\"email\": \"erickobregonf@gmail.com\",\n\t\"phoneNumber\": 87134265\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"url": "localhost:5000/users/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idCard\": 101110111,\n\t\"name\": \"Erick Andrés\",\n\t\"lastname\": \"Obregón Fonseca\",\n\t\"email\": \"erickobregonf@gmail.com\",\n\t\"phoneNumber\": 87134265\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getUserByID",
+			"request": {
+				"url": "localhost:5000/users/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"url": "localhost:5000/users/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"url": "localhost:5000/users/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idCard\": 101110111,\n\t\"name\": \"Erick Andrés\",\n\t\"lastname\": \"Obregón Fonseca\",\n\t\"email\": \"erickobregonf@gmail.com\",\n\t\"phoneNumber\": 87134265\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
