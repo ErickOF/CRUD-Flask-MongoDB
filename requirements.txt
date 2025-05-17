@@ -5,7 +5,7 @@ Flask==3.0.3
 Flask-Cors==6.0.0
 Flask-PyMongo==2.3.0
 itsdangerous==2.2.0
-Jinja2==3.1.5
+Jinja2==3.1.6
 MarkupSafe==2.1.5
 pymongo==4.8.0
 Werkzeug==3.0.6
